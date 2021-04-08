@@ -1,0 +1,210 @@
+body {
+  background: #eaf6f6;
+  color: #40514E;
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", sans-serif, monospace;
+}
+
+h1 {
+  font-size: 72px;
+  font-family: "Montserrat", cursive;
+  margin: 50px auto 0;
+  color: #66BFBF;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #11999E;
+}
+
+hr {
+  width: 5%;
+  border: dotted #303030 6px;
+  border-bottom: none;
+  margin: 100px auto;
+}
+
+/**** CLASS SELECTORS ********************/
+.top-container {
+  padding: 100px 20px 20px;
+  position: relative;
+  background-color: #e4f9f5;
+}
+
+.pro {
+  text-decoration: underline;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+  animation: to-right 7s linear infinite;
+}
+
+.bottom-cloud {
+  position: absolute;
+  bottom: 300px;
+  left: 300px;
+  animation: to-left 7s linear infinite;
+}
+
+.profile img {
+  width: 200px;
+  margin-top: 50px;
+}
+
+.skills {
+  color: #000;
+  padding: 20px 0;
+}
+
+.skills-row {
+  width: 60%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.webDesigner {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.webDeveloper {
+  filter: hue-rotate(60deg);
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+
+.contact-p {
+  width: 40%;
+  margin: 40px auto;
+}
+
+.btn {
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  position: relative;
+  border-radius: 10px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px;
+  background: #66bfbf;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #11999E;
+  text-decoration: none;
+}
+
+.bottom-container {
+  margin-top: 60px;
+  height: 150px;
+  background-color: #e4f9f5;
+}
+
+.footer-link {
+  text-decoration: none;
+  position: relative;
+  top: 40px;
+  margin: auto 20px;
+  color: #11999E;
+}
+
+.footer-p {
+  position: relative;
+  top: 60px;
+  color: #40514E;
+}
+
+@keyframes to-right {
+  0% {
+    right: 50px;
+  }
+
+  50% {
+    right: 100px;
+  }
+
+  100% {
+    right: 50px;
+  }
+}
+
+@keyframes to-left {
+  0% {
+    left: 50px;
+  }
+
+  50% {
+    left: 100px;
+  }
+
+  100% {
+    left: 50px;
+  }
+}
+
+@media(max-width:768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  hr {
+    margin: 0 auto;
+  }
+
+  .top-container {
+    padding: 20px;
+  }
+
+  .top-cloud {
+    top: 20px;
+    right: 50px;
+    width: 80px;
+  }
+
+  .bottom-cloud {
+    left: 50px;
+    bottom: 200px;
+    width: 80px;
+  }
+
+  .mountain {
+    width: 100%;
+  }
+
+  .profile img {
+    width: 150px;
+  }
+
+  .profile p {
+    margin: 1rem;
+  }
+
+  .skills-row {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .contact-p {
+    width: 90%;
+  }
+}
